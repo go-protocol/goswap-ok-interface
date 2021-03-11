@@ -369,20 +369,20 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
             Vote
           </StyledNavLink> */}
-          <StyledExternalLink id={`stake-nav-link`} href={miningLink}>
+          {/* <StyledExternalLink id={`stake-nav-link`} href={miningLink}>
             {t('mining')} <span style={{ fontSize: '11px' }}>↗</span>
-          </StyledExternalLink>
-          <StyledExternalLink id={`stake-nav-link`} href={infoLink}>
+          </StyledExternalLink> */}
+          {/* <StyledExternalLink id={`stake-nav-link`} href={infoLink}>
             {t('info')} <span style={{ fontSize: '11px' }}>↗</span>
-          </StyledExternalLink>
-          <StyledExternalLink id={`stake-nav-link`} href={"https://farm.goswap.app/#/"}>
+          </StyledExternalLink> */}
+          {/* <StyledExternalLink id={`stake-nav-link`} href={"https://farm.goswap.app/#/"}>
             {t('gofarm')} <span style={{ fontSize: '11px' }}>↗</span>
-          </StyledExternalLink>
-          {networkType === 'BSC' && (
+          </StyledExternalLink> */}
+          {/* {networkType === 'BSC' && (
             <StyledExternalLink id={`stake-nav-link`} href={'https://www.binance.org/en/bridge'}>
               {t('bridge')} <span style={{ fontSize: '11px' }}>↗</span>
             </StyledExternalLink>
-          )}
+          )} */}
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
