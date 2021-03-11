@@ -2,10 +2,7 @@ import { Currency, ETHER, Token } from 'goswap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
-import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import oktLogo from '../../assets/images/Token-logo.jpg'
-import HecoLogo from '../../assets/images/Heco-logo.png'
-import BinanceLogo from '../../assets/images/bnb.svg'
 import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
 import Logo from '../Logo'
@@ -60,7 +57,7 @@ export default function CurrencyLogo({
   if (currency === ETHER) {
     return (
       <StyledEthereumLogo
-        src={chainId === 56 || chainId === 97 ? BinanceLogo : chainId === 256 || chainId === 128 ? HecoLogo : EthereumLogo}
+        src={oktLogo}
         size={size}
         style={style}
       />
