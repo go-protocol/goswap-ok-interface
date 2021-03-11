@@ -73,7 +73,7 @@ export function V1LiquidityInfo({
       </RowBetween>
       <RowBetween mb="1rem">
         <Text fontSize={16} fontWeight={500}>
-          Pooled HT:
+          Pooled OKT:
         </Text>
         <RowFixed>
           <Text fontSize={16} fontWeight={500} marginLeft={'6px'}>
@@ -207,26 +207,26 @@ function V1PairMigration({ liquidityTokenAmount, token }: { liquidityTokenAmount
             <RowBetween>
               <TYPE.body>V1 Price:</TYPE.body>
               <TYPE.black>
-                {v1SpotPrice?.toSignificant(6)} {token.symbol}/HT
+                {v1SpotPrice?.toSignificant(6)} {token.symbol}/OKT
               </TYPE.black>
             </RowBetween>
             <RowBetween>
               <div />
               <TYPE.black>
-                {v1SpotPrice?.invert()?.toSignificant(6)} HT/{token.symbol}
+                {v1SpotPrice?.invert()?.toSignificant(6)} OKT/{token.symbol}
               </TYPE.black>
             </RowBetween>
 
             <RowBetween>
               <TYPE.body>V2 Price:</TYPE.body>
               <TYPE.black>
-                {v2SpotPrice?.toSignificant(6)} {token.symbol}/HT
+                {v2SpotPrice?.toSignificant(6)} {token.symbol}/OKT
               </TYPE.black>
             </RowBetween>
             <RowBetween>
               <div />
               <TYPE.black>
-                {v2SpotPrice?.invert()?.toSignificant(6)} HT/{token.symbol}
+                {v2SpotPrice?.invert()?.toSignificant(6)} OKT/{token.symbol}
               </TYPE.black>
             </RowBetween>
 
@@ -249,13 +249,13 @@ function V1PairMigration({ liquidityTokenAmount, token }: { liquidityTokenAmount
             <RowBetween>
               <TYPE.body>V1 Price:</TYPE.body>
               <TYPE.black>
-                {v1SpotPrice?.toSignificant(6)} {token.symbol}/HT
+                {v1SpotPrice?.toSignificant(6)} {token.symbol}/OKT
               </TYPE.black>
             </RowBetween>
             <RowBetween>
               <div />
               <TYPE.black>
-                {v1SpotPrice?.invert()?.toSignificant(6)} HT/{token.symbol}
+                {v1SpotPrice?.invert()?.toSignificant(6)} OKT/{token.symbol}
               </TYPE.black>
             </RowBetween>
           </AutoColumn>

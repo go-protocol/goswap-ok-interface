@@ -61,7 +61,7 @@ export const UNI: { [chainId in ChainId]: Token } = {
     ChainId.HECOMAIN,
     '0xbbEeF58A63aeb9D5BC5e5792A20B81e0DE83fD14',
     10,
-    'HT',
+    'OKT',
     'Unisave'
   ),
   [ChainId.HECOTEST]: new Token(

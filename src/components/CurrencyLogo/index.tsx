@@ -3,6 +3,7 @@ import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import oktLogo from '../../assets/images/Token-logo.jpg'
 import HecoLogo from '../../assets/images/Heco-logo.png'
 import BinanceLogo from '../../assets/images/bnb.svg'
 import useHttpLocations from '../../hooks/useHttpLocations'
@@ -14,6 +15,7 @@ const getTokenLogoURL = (chainId: number | undefined, address: string) => {
   if (chainId === 56 || chainId === 97) return `https://tokens.bscswap.com/images/${address}.png`
   if (chainId === 256) return `https://raw.githubusercontent.com/go-protocol/goswap-tokenlist/main/assets/HECOTEST/${address}.png`
   if (chainId === 128) return `https://raw.githubusercontent.com/go-protocol/goswap-tokenlist/main/assets/HECOMAIN/${address}.png`
+  if (chainId === 65) return oktLogo
   return ''
 }
 

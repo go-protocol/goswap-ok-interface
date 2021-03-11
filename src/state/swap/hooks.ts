@@ -226,7 +226,7 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'HT') return 'CURRENCY'
+    if (urlParam.toUpperCase() === 'OKT') return 'CURRENCY'
     if (valid === false) return 'CURRENCY'
   }
   return 'CURRENCY' ?? ''
