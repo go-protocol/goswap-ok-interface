@@ -21,9 +21,9 @@ import { useETHBalances
 } from '../../state/wallet/hooks'
 // import { CardNoise } from '../earn/styled'
 // import { CountUp } from 'use-count-up'
-import { 
-  // TYPE, 
-  ExternalLink } from '../../theme'
+// import { 
+//   // TYPE, 
+//   ExternalLink } from '../../theme'
 
 import { YellowCard } from '../Card'
 import Settings from '../Settings'
@@ -41,9 +41,9 @@ import ClaimModal from '../claim/ClaimModal'
 // import usePrevious from '../../hooks/usePrevious'
 import { darken } from 'polished'
 import I18nSwitch from '../I18nSwitch'
-import useInfoLink from '../../hooks/useInfoLink'
-import useMiningLink from '../../hooks/useMiningLink'
-import useNetworkType from '../../hooks/useNetworkType'
+// import useInfoLink from '../../hooks/useInfoLink'
+// import useMiningLink from '../../hooks/useMiningLink'
+// import useNetworkType from '../../hooks/useNetworkType'
 
 const HeaderFrame = styled.div`
   display: flex;
@@ -267,36 +267,36 @@ const StyledNavLink = styled(NavLink).attrs({
   `}
 `
 
-const StyledExternalLink = styled(ExternalLink).attrs({
-  activeClassName
-})<{ isActive?: boolean }>`
-  ${({ theme }) => theme.flexRowNoWrap}
-  align-items: left;
-  border-radius: 3rem;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  color: ${({ theme }) => theme.text2};
-  font-size: 1rem;
-  width: fit-content;
-  margin: 0 12px;
-  font-weight: 500;
+// const StyledExternalLink = styled(ExternalLink).attrs({
+//   activeClassName
+// })<{ isActive?: boolean }>`
+//   ${({ theme }) => theme.flexRowNoWrap}
+//   align-items: left;
+//   border-radius: 3rem;
+//   outline: none;
+//   cursor: pointer;
+//   text-decoration: none;
+//   color: ${({ theme }) => theme.text2};
+//   font-size: 1rem;
+//   width: fit-content;
+//   margin: 0 12px;
+//   font-weight: 500;
 
-  &.${activeClassName} {
-    border-radius: 12px;
-    font-weight: bold;
-    color: ${({ theme }) => theme.text1};
-  }
+//   &.${activeClassName} {
+//     border-radius: 12px;
+//     font-weight: bold;
+//     color: ${({ theme }) => theme.text1};
+//   }
 
-  :hover,
-  :focus {
-    color: ${({ theme }) => darken(0.1, theme.text1)};
-  }
+//   :hover,
+//   :focus {
+//     color: ${({ theme }) => darken(0.1, theme.text1)};
+//   }
 
-  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    margin: 0 8px;
-  `}
-`
+//   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+//     margin: 0 8px;
+//   `}
+// `
 
 const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.RINKEBY]: 'Rinkeby',
@@ -330,9 +330,9 @@ export default function Header() {
 
   // const countUpValue = aggregateBalance?.toFixed(0) ?? '0'
   // const countUpValuePrevious = usePrevious(countUpValue) ?? '0'
-  const infoLink = useInfoLink(chainId)
-  const miningLink = useMiningLink(chainId)
-  const networkType = useNetworkType(chainId)
+  // const infoLink = useInfoLink(chainId)
+  // const miningLink = useMiningLink(chainId)
+  // const networkType = useNetworkType(chainId)
 
   return (
     <HeaderFrame>
